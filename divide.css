@@ -1,3 +1,4 @@
+/*This part is for the columning*/
 .uneven-columns{
 margin-top: 20px;
 display: flex;
@@ -20,6 +21,7 @@ flex-wrap: wrap;
     background-color: beige;
 }
 
+/*Style for cards*/
 .card {
     background-color: transparent;
     width: 500px;
@@ -73,6 +75,7 @@ input::-webkit-input-placeholder {
     color: #AAA;
 }
 
+/* This part is for the Tab Cards*/
 
 .tab-container {
     margin-top: 20px;
