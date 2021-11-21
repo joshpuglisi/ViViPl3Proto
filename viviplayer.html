@@ -23,21 +23,56 @@
                 <div class="viviplayer"></div> <!--Not a real Player, only for example-->
             </div>
             <div class="uneven-columns right">
-                <div class="card"> <!--Card for User Story-->
-                    <div class="card-style">
-                        <h5 class="card-title">User Story</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Geben Sie ihr User Story hier ein.</h6>
-                        <form>
-                            <div class="input-group" style="margin:10px; width:90%">
-                                <textarea class="form-control" id="my-text" style="height:200px;"></textarea>
+                <div id="tab-container" class="tab-container">
+                    <div class="container-fluid">
+                        <div class="col-md-10 col-md-offset-1">
+                            <input id="tab1" type="radio" name="tabs" checked>
+                            <label for="tab1">User Story</label>
+                        
+                            <input id="tab2" type="radio" name="tabs">
+                            <label for="tab2">Satz</label>
+
+                            <div id="content1" class="tab-content">
+                                <div class="card"> <!--Card for User Story-->
+                                    <div class="card-style">
+                                        <h5 class="card-title">User Story</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">Geben Sie ihr User Story hier ein.</h6>
+                                        <form>
+                                            <p style="margin-top: 20px; font-size:12pt">Damit
+                                                <input class="input" placeholder="Bitte hier eingeben" type="text" id="my-text">
+                                            </p>
+                                            <p style="font-size:12pt">möchte ich als
+                                                <input class="input" placeholder="Bitte hier eingeben" type="text" id="my-text2">
+                                            </p>
+                                            <p style="font-style: italic; margin-top: 10px">
+                                                z.B : <b>Damit</b> ich besser meine Codes ordnen kann, <b>möchte ich als</b> 
+                                                Programmer eine automatische Code Sortierung-App haben.
+                                            </p>
+                                            <script src="example/submit.js"></script> <!--Only for testing-->
+                                            <button type="submit" class="btn btn-primary btn-sm" style="margin-top: 10px" onclick="download()">Posten</button>
+                                            <button type="reset" class="btn btn-secondary btn-sm" style="margin-top: 10px">Zurücksetzen</button>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
-                            <p style="font-style: italic; margin-top: 10px">
-                                z.B : <b>Damit</b> ich besser meine Codes ordnen kann, <b>möchte ich als</b> 
-                                Programmer eine automatische Code Sortierung-App haben.
-                            </p>
-                            <button type="submit" class="btn btn-primary btn-sm" style="margin-top: 10px">Posten</button>
-                            <button type="reset" class="btn btn-secondary btn-sm" style="margin-top: 10px">Zurücksetzen</button>
-                        </form>
+
+                            <div id="content2" class="tab-content">
+                                <div class="card"> <!--Card for User Story-->
+                                    <div class="card-style">
+                                        <h5 class="card-title">Kommentar</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">Geben Sie ihr Komentar hier ein.</h6>
+                                        <form>
+                                            <div class="input-group">
+                                                <textarea class="form-control" id="my-text" style="height: 175px"></textarea>
+                                            </div>
+                                            <script src="example/submit.js"></script> <!--Only for testing-->
+                                            <button type="submit" class="btn btn-primary btn-sm" style="margin-top: 10px" onclick="download()">Posten</button>
+                                            <button type="reset" class="btn btn-secondary btn-sm" style="margin-top: 10px">Zurücksetzen</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
